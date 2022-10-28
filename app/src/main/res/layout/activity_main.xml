@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2323132B"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DDB9B9"
+        android:ems="10"
+        android:hint="Enter temperature here.."
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="683dp"
+        android:checkedButton="@id/c2f">
+
+        <RadioButton
+            android:id="@+id/c2f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert to ºF" />
+
+        <RadioButton
+            android:id="@+id/f2c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert to ºC" />
+
+        <Button
+            android:id="@+id/convert_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert" />
+
+    </RadioGroup>
+</LinearLayout>
